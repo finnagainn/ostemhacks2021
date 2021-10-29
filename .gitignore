@@ -1,3 +1,5 @@
 /drf
 __pycache__/
 token.txt
+venv
+.env
