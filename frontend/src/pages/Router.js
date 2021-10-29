@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 
 import NavBar from '../components/NavBar';
-import ViewRequests from './ViewRequests';
+import {ViewRequests, Request} from './ViewRequests';
 import RequestPage from './RequestPage';
 import Home from './Home';
 
@@ -20,10 +20,13 @@ function RouterDisplay() {
           <Home />
         </Route>
         <Route path="/requests">
-          <RequestPage />
-        </Route>
-        <Route path="/request">
           <ViewRequests />
+        </Route>
+        <Route path="/request/:id">
+          <Request />
+        </Route>
+        <Route path="/request/">
+            <RequestPage />
         </Route>
       </Switch>
     </Router>
