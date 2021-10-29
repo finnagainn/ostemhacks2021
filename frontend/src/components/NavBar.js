@@ -6,7 +6,7 @@ function NavBar () {
         <AppBar position="sticky">
             <div style={{display: 'flex', font: 'Roboto'}}>
                 <div>
-                    <Button color="inherit" href="/" style={{textTransform: 'none'}}><h2>&#60;/&#62; DevQuests</h2></Button>
+                    <Button color="inherit" href="/" style={{textTransform: 'none', textIndent: 50}}><h2>&#60;/&#62; DevQuests</h2></Button>
                 </div>
                 <div style={{display: 'flex', flexGrow: 1, justifyContent: 'space-evenly', alignItems: 'center'}}>
                     <Button color="inherit" href="/" style={{textTransform: 'none', alignContent: 'center'}}><h3>Home</h3></Button>
@@ -18,4 +18,4 @@ function NavBar () {
     )
 }
 
-export default NavBar
+export default NavBar;
